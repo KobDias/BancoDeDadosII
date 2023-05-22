@@ -1,0 +1,33 @@
+aLTER:
+
+charset_name
+
+Latin1
+cs = case sensitive
+ai = Accent insensitive
+
+------
+ci - case insensitive
+as - accent sensive
+bin - ordem de classificação binario
+
+collation_name
+
+
+comandos
+
+create database 'name';
+
+show caracter set;
+show collation;
+
+mostram config >
+
+show variables like "character_set_database";
+show variables like "collation_database";
+
+SELECT SCHEMA_NAME 'database', default_character_net_name 'charset', DEFAULT_COLLATION_NAME 'collation' FROM information_schema.SCHEMATA;
+
+ALTER DATABASE nomr DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+drop dabatase [nome tabela]
